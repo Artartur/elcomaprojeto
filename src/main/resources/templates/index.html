@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/" xmlns:sec="http://www.thymeleaf.org/extras/spring-security%22%3E">
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link th:href="@{/css/style-index.css}" rel="stylesheet">
+    <link th:href="@{/img/logo.png}" rel="icon">
+</head>
+<body style ="background-image: url(./img/fundo.png)">
+<div class="center">
+    <img th:src="@{./img/logo.png}" class="logo"><br>
+    <h1 class="title">Vagalume</h1>
+    <p  class="p">Wifi Solutions</p>
+
+    <form method="post">
+        <div class="txt_field">
+            <input type="text" required>
+            <span></span>
+            <label>Usuário</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" required>
+            <span></span>
+            <label>Senha</label>
+        </div>
+        <input type="submit" value="Entrar">
+        <div class="signup_link">
+            Não tem um cadastro? <a th:href="@{/usuario}">Cadastre-se</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
