@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/" xmlns:sec="http://www.thymeleaf.org/extras/spring-security%22%3E">
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro realizado</title>
+    <link th:href="@{/css/style-propaganda.css}" rel="stylesheet">
+    <link th:href="@{/img/logo.png}" rel="icon">
+</head>
+<style>
+</style>
+<body style ="background-image: url(./img/fundo.png)">
+<div class="container" >
+    <div class="center">
+        <img th:src="@{./img/logo.png}" class="logo"><br>
+        <h1 class="title">Vagalume</h1>
+        <p  class="p">Wifi Solutions</p>
+        <h3>Cadastro realizado com sucesso!</h3>
+        <div>
+            <p>Propaganda</p>
+        </div>
+    </div>
+    <div class="center1">
+        <div>
+            <button type="submit"><a th:href="@{/}">Voltar</a></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

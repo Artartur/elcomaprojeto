@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/" xmlns:sec="http://www.thymeleaf.org/extras/spring-security%22%3E">
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <link th:href="@{/css/style-register.css}" rel="stylesheet">
+    <link th:href="@{/img/logo.png}" rel="icon">
+</head>
+<body style ="background-image: url(./img/fundo.png)">
+<div class="center">
+    <img th:src="@{/img/logo.png}" class="logo"><br>
+    <h1>Cadastro</h1>
+    <p>Wifi-Solutions</p>
+    <form action="#" th:action="@{/usuario/salvar}" th:object="${usuario}" method="POST">
+        <div class="txt_field">
+            <input type="text" th:field="*{nome}" class="form-control mb-4 col-4">
+            <span></span>
+            <label>Nome</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" th:field="*{sobrenome}"  class="form-control mb-4 col-4">
+            <span></span>
+            <label>Sobrenome</label>
+        </div>
+        <div class="txt_field">
+            <input type="date" th:field="*{dataNascimento}"  class="form-control mb-4 col-4">
+            <span></span>
+            <label>Data de Nascimento</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" th:field="*{genero}"  class="form-control mb-4 col-4">
+            <span></span>
+            <label>Gênero</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" th:field="*{cpf}"  class="form-control mb-4 col-4">
+            <span></span>
+            <label>CPF</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" th:field="*{uf}"  class="form-control mb-4 col-4">
+            <span></span>
+            <label>UF</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" th:field="*{cidade}"  class="form-control mb-4 col-4">
+            <span></span>
+            <label>Cidade</label>
+        </div>
+
+        <div class="txt_field">
+            <input type="number" th:field="*{ddd}"  class="form-control mb-4 col-4">
+            <span></span>
+            <label>DDD</label>
+        </div>
+        <div class="txt_field">
+            <input type="number" th:field="*{telefone}"  class="form-control mb-4 col-4">
+            <span></span>
+            <label>Telefone</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" th:field="*{email}"  class="form-control mb-4 col-4">
+            <span></span>
+            <label>Email</label>
+        </div>
+        <div class="txt_field">
+            <input type="Password" th:field="*{senha}"  class="form-control mb-4 col-4">
+            <span></span>
+            <label>Senha</label>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
+</body>
+</html>
